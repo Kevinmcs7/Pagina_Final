@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Servidores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(0, 0, 0); /* Cambiado a azul */
+            color: #ffffff; /* Cambiado a negro */
+        }
+        
+        .contenido {
+            display: flex;
+            text-align: center;
+        }
+
+        .navbar {
+            float: left;
+            width: 20%;
+            background-color: rgb(0, 0, 0); /* Cambiado a azul */
+            color: white;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .menu-title {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            width: 80%;
+            height: 100%;
+        }
+
+        #footer {
+            clear: both;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            background-color: #000000; /* Cambiado a azul */
+            margin-bottom: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #2078af; /* Cambiado a un tono más oscuro de azul */
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+        
+        ul {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Administración de Servidores</h1>
+    </div>
+    <div class="contenido">
+        <div class="navbar">
+            <div class="menu-title">
+                <h2>PDFS</h2>
+            </div>
+            <ul>
+                <li><a href="DNS.pdf" target="pdfFrame">DNS</a></li>
+                <li><a href="DHCP.pdf" target="pdfFrame">DHCP</a></li>
+                <li><a href="HTTP.pdf" target="pdfFrame">HTTP</a></li>
+                <li><a href="FTP.pdf" target="pdfFrame">FTP</a></li>
+                <li><a href="Correo.pdf" target="pdfFrame">Correo</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <iframe name="pdfFrame" width="100%" height="600" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div id="footer">
+        &COPY; 2023 Kevin Miguel Carrillo Santana
+    </div>
+</body>
+</html>
